@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<script src="js/scripts.js"></script>
+<link rel="stylesheet" href="cascadesheet.css">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Signika:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div class="header">
+	<h1>Sun and Moon Cafe</h1>
+</div>
+<!--Navbar-->
+<div> 
+<ul class="navbar">
+<li><a href="index.html">HOME</a></li>
+<li><a href="menu.html">MENU</a></li>
+<li><a href="specials.html">SPECIALS</a></li>
+<li><a href="about.html">ABOUT</a></li>
+</ul>	
+
+<div class="specialtext">
+<h1>Save 25% on the following</h1>
+<h2>In store and pickup only<h2>
+</div>
+
+<ul class="specialgallery">
+	<li><p>GOURMET SALAD: $6.40</p><a href="salad.html"><img class ="salad" src="images/gourmetsalad_resized.jpg" width = "385px" height = "267px" alt ="Gourmet Salad"></li></a>
+	<li><p>BACON FRENCH TOAST: $6.00</p><a href="frenchtoast.html"><img class="toast" src="images/frenchtoast.jpg" width = "385px" height = "267px" atl="French Toast"></li></a>
+	<li><p>LAMINGTONS: $3.40</p><a href="lamington.html"><img class="lamingtons" src="images/lamingtons.jpg" width = "385px" height = "267px" alt="Lamington"></li></a>
+</ul>
+
+<form name="form" class="form" action="action_page.php" onsubmit="return validateForm()" method="post">
+<p>Sign up to receive weekly specials!</p>
+Name: <input type="text" name="name"><br>
+Email: <input type="text" name="email">
+
+<p>Product Interests</p>
+<input type="checkbox" id="checkbox" value="Coffees" name="productcheck[]">
+<label for="product1"> Coffees</label><br>
+
+<input type="checkbox" id="checkbox" value="Baked goods" name="productcheck[]">
+<label for="product2"> Baked Goods</label><br>
+
+<input type="checkbox" id="checkbox" value="Savoury Foods" name="productcheck[]">
+<label for="product3"> Savoury Foods</label><br> 
+
+<label for="dob">Birthday:</label>
+<input type="date" id="birthday" name="dob">
+
+
+<p>Permission to be added to Sun and Moon Cafe email list:</p>
+<input type="radio" id="yes_approval" name="approval" value="yes">
+<label for="yes">Yes</label><br>
+<input type="radio" id="no_approval" name="approval" value="no">
+<label for="no">No</label><br>
+
+<input type="submit" value="Submit">
+</form>
+</body>
+
+
+<div id="footer">
+<ul class="footerlinks">
+<h2 style="font-size:15px">Links</h2>
+<li><a href="index.html">HOME</a></li>
+<li><a href="menu.html">MENU</a></li>
+<li><a href="specials.html">SPECIALS</a></li>
+<li><a href="about.html">ABOUT</a></li>
+</ul>
+
+
+
+<ul class="footercontacts">
+<h2 style="font-size:15px">Contacts</h2>
+<li>Phone: 0455 9999 555</li>
+<li>Catering: 0433 3333 999</li>
+<li>Address: 223 Powell St, Bowen, QLD</li>
+</ul>
+
+</div>
+
+</html>
